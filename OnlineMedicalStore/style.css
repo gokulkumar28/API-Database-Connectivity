@@ -1,0 +1,47 @@
+.header
+{
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+#show-login{
+    text-align: center;
+    display: block;
+}
+#signin-page
+{
+    display: none;
+}
+#signup-page
+{
+    display: none;
+}
+#medicine-table
+{
+    display: none;
+}
+#purchase-table
+{
+    display:none;
+
+}
+#medicine-edit
+{
+    display: none;
+}
+#topup
+{
+    display:none;
+}
+#showbalance
+{
+    display: block;
+}
+#inside
+{
+    display: none;
+}
+#cancel-order
+{
+    display: none;
+}

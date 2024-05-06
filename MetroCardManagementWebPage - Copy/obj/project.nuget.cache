@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "i+rUCJ2v2p6Q7xFtnfPTs7iWV4rj+pG5LVTre+eMafQjUoyFTyU86M1CDzFtLHNyPwBz5ic4rvyTrR6czHl4Vw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\GokulkumarMurugesan\\OneDrive - Syncfusion\\Desktop\\MetroCardManagementWebPage - Copy\\MetroCardManagementWebPage - Copy.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\GokulkumarMurugesan\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.18\\microsoft.aspnetcore.openapi.7.0.18.nupkg.sha512",
+    "C:\\Users\\GokulkumarMurugesan\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\GokulkumarMurugesan\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\GokulkumarMurugesan\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\GokulkumarMurugesan\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\GokulkumarMurugesan\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\GokulkumarMurugesan\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

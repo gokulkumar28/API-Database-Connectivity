@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <span class="header-content">Online Medical Store</span>
+    </div>
+
+    <div id="show-login">
+        <button id="signup" onclick="Signup()">Signup</button>
+        <button id="signin" onclick="signin()">Signin</button>
+    </div>
+
+    <div id="signup-page">
+        <p>Welcome to Sign Up page</p><br>
+        <label>Name</label><br>
+        <input id="name-signup" type="text"><br>
+        <label>Emaill</label><br>
+        <input id="email-signup" type="email" name="email" onclick="CheckEmailValidation()"><br>
+        <lebel>password</lebel><br>
+        <input id="password-signup" type="password" name="password"><br>
+        <label>confirm password</label><br>
+        <input id="confirm-password" type="password" name="confirm-password" onclick="CheckPassswordValidation()"><br>
+        <label>Mobile number</label><br>
+        <input id="mobile-number" type="number"><br>
+        <button type="submit" onclick="Login()">Signup</button>
+    </div>
+
+    <div id="signin-page">
+        <p>Welcome to Sign In page</p><br>
+        <label>Name</label><br>
+        <input id="name" type="text"><br>
+        <label>Emaill</label><br>
+        <input id="email" type="email" name="email"><br>
+        <lebel>password</lebel><br>
+        <input id="password" type="password" name="password"><br>
+        <button type="submit" id="signin-btn" onclick="LoginProcess()">Signin</button>
+    </div>
+
+    <div id="inside">
+        <p>Welcome to Home page</p><br>
+        <span id="welcome"></span><br>
+        <button class="medicine-details" onclick="MedicineDetail()">
+            Medicine details<br>
+        </button>
+        <button class="purchase" onclick="purchase()">
+            Purchase
+        </button>
+        <button class="cancel" onclick="cancel()">
+            Cancel
+        </button>
+        <button class="top-up" onclick="hi()">
+            Top Up
+        </button>
+        <button class="show-balance" onclick="showBalance1()">
+            Show Balance
+        </button>
+        <button class="order-history" onclick="orderHistory()">
+            Order History
+        </button>
+    </div>
+    <div id="medicine-table">
+        <table id="dataTable" border="2">
+            <thead>
+                <tr>
+                    <th>Medicine Id</th>
+                    <th>Medicine Name</th>
+                    <th>Medicine Count</th>
+                    <th>Medicine Price</th>
+                </tr>
+            </thead>
+            <tbody id="rows">
+                <!-- Table data will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+    <div id="purchase-table">
+        <table id="data-Table" border="2">
+            <thead>
+                <tr>
+                    <th>Medicine Id</th>
+                    <th>Medicine Name</th>
+                    <th>Medicine Count</th>
+                    <th>Medicine Price</th>
+                    <th>Option</th>
+                </tr>
+            </thead>
+            <tbody id="rows-1">
+                <!-- Table data will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+    <div id="medicine-edit">
+        <label>Enter Count to edit</label><br>
+        <input type="number" id="edit-count"><br>
+        <button onclick="edit()">change</button>
+    </div>
+
+    <div id="topup">
+        <label>Enter Amount to top up</label><br>
+        <input id="top-amount" type="number"><br>
+        <button id="top-up-amount" onclick="topUp()">add</button>
+    </div>
+
+    <div id="showbalance">
+
+    </div>
+ 
+
+    <div id="cancel-order">
+
+        <table id="cancel-show-table">
+            <thead>
+                <tr>
+                    <th>Order Id</th>
+                    <th>UserId</th>
+                    <th>Medicine Name</th>
+                    <th>Medicine Count</th>
+                    <th>Total Price</th>
+                    <th>Option</th>
+                </tr>
+            </thead>
+            <tbody id="rows">
+                <!-- Table data will be inserted here -->
+            </tbody>
+    </div>
+   
+</body>
+
+</html>

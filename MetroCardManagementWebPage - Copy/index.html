@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Metro Card Management</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+    <div id="main-header">
+        Metro Card Management System
+    </div>
+
+    <div id="mainmenu">
+        <button id="new-user-registration" onclick="NewUserRegistration()">New User Registration</button><br>
+        <button id="login-user" onclick="Login()">Login User</button><br>
+    </div>
+
+    <div id="user-registration-page">
+        <label >UserName</label><br>
+        <input id="registration-username" type="text"><br>
+        <label >Mobile No</label><br>
+        <input id="registration-mobile" type="number"><br>
+        <label >Enter Balance for your card</label><br>
+        <input id="registration-balance" type="number"><br>
+        <button type="submit" onclick="ShowSuccessfullRegistration()">Register</button><br>
+    </div>
+
+    <div id="successfull-registration">
+        You have successfully registered. Your card Number is <span id="successful-registration-message"></span><br>
+        <button id="successfull-registration-btn" onclick="MainMenu()">back to Login</button>
+    </div>
+
+    <div id="login-page">
+        <label >Enter your card number</label><br>
+        <input id="card-number" type="text"><br>
+        <button type="submit" onclick="SubMenu()">Login</button><br>
+    </div>
+
+    <div id="invalid-login">
+        <span>Entered Card Number is Wrong please try again...</span><br>
+        <button id="invalid-login-button" onclick="Login()">Back To Login</button>
+    </div>
+
+    <div id="sub-menu">
+        <span id="sub-header"> Welcome <span id="username"></span>,</span><br>
+        <span id="button-flex">
+        <button id="balance-check-btn" onclick="BalanceCheck()">Blance check</button>
+        <button id="recharge-btn" onclick="Recharge()">Recharge</button>
+        <button id="view-travel-history-btn" onclick="ViewTravelHistory()">View Travel History</button>
+        <button id="travel-btn" onclick="Travel()">Travel</button>
+        <button id="back-to-login-btn" onclick="MainMenu()">Back To Login</button>
+        </span>
+    </div>
+
+    <div id="balance-check-display">
+        <label>Enter Card Number to check balance</label><br>
+        <input id="balance-check-card-number" type="text"><br>
+        <button id="balance-check-submit-btn" type="submit" onclick="ShowBalance()">submit</button><br>
+    </div>
+
+    <div id="invalid-card-Number">
+        <span>Entered Card Number is Wrong please try again...</span><br>
+        <button id="invalid-login-button" onclick="SubMenu()">Back To SubMenu</button>
+    </div>
+
+    <div id="show-balance-display">
+       your balance is <span id="display-balance"></span><br>
+       <button id="show-balance-button" onclick="SubMenu()">Back to SubMenu</button>
+    </div>
+
+    <div id="recharge-display">
+        <label>Enter Card Number to recharge</label><br>
+        <input id="recharge-card-number" type="text"><br>
+        <label>Enter Amount</label><br>
+        <input id="recharge-amount" type="number"><br>
+        <button id="recharge-submit-btn" type="submit" onclick="ShowBalance()">submit</button><br>
+    </div>
+
+    <div id="view-travel-history-display">
+
+        <div id="travel-history-header">
+            Travel History Details<br>
+        </div>
+
+        <table id="travel-history-table-data" border="1">
+            <thead>
+                <td>Card Number</td>
+                <td>From Location</td>
+                <td>To Location</td>
+                <td>Date</td>
+                <td>Travel Cost</td>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+        <button id="travel-history-button" onclick="SubMenu()">Back to SubMenu</button>
+    </div>
+
+    <div id="travel-display">
+
+        <div id="travel-content">
+            Ticket price details
+        </div>
+
+        <table id="ticket-price-table-data" border="1">
+            <thead>
+                <td>Ticket ID</td>
+                <td>From Location</td>
+                <td>To Location</td>
+                <td>Ticket Price</td>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+        <label>Enter Ticket ID to travel</label><br>
+        <input id="ticket-id" type="text"><br>
+        <button id="ticket-travel-btn" onclick="BalanceCheck()">Submit</button><br>
+    </div>
+
+    <div id="insufficient-balance">
+        <span>You have Insufficient balance please recharge and try again..... </span><br>
+        <button id="insufficient-balance-btn">Top-up</button><br>
+    </div>
+
+
+</body>
+</html>
